@@ -1,0 +1,248 @@
+[
+    {
+        "name": "Mardonio Hilbert Marques de França",
+        "location": "Fortaleza, Ceará",
+        "course": "Engenharia de Computação",
+        "interests": ["Machine Learning"]
+    },
+    {
+        "name": "Lucas Gabriel Teodoro",
+        "location": "Americana, São Paulo",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["Azure", "Machine Learning"]
+    },
+    {
+        "name": "Leticia Pereira do Vale",
+        "location": "Boa Viagem, Ceará",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["Programação", "Back-end"]
+    },
+    {
+        "name": "Antonio Rian de Jesus Felix",
+        "location": "Crato, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Programação"]
+    },
+    {
+        "name": "Gabriel Machado dos Santos",
+        "location": "Jaz, São Paulo",
+        "course": "Programação",
+        "interests": ["Lógica de Programação"]
+    },
+    {
+        "name": "Octavio",
+        "location": "Interior de São Paulo",
+        "course": "Sistemas para Internet",
+        "interests": ["Informática"]
+    },
+    {
+        "name": "Joao Henrique de Oliveira",
+        "location": "Olambra, São Paulo",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["Machine Learning"]
+    },
+    {
+        "name": "Gustavo Eliel",
+        "location": "Crato, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Machine Learning"]
+    },
+    {
+        "name": "Larissa Trece",
+        "location": "Fortaleza, Ceará",
+        "course": "Engenharia de Computação",
+        "interests": ["Computação"]
+    },
+    {
+        "name": "Kalyl Semi Diab",
+        "location": "São Paulo",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["Nuvem", "Machine Learning"]
+    },
+    {
+        "name": "Giovanna Gutierrez",
+        "location": "Mogi Mirim, São Paulo",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["Machine Learning"]
+    },
+    {
+        "name": "Gabriel Alencar Gomes",
+        "location": "Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Inteligência Artificial"]
+    },
+    {
+        "name": "Victor de Souza Custodio",
+        "location": "São Paulo, Capital",
+        "course": "Segurança da Informação",
+        "interests": ["Nuvem", "DevOps"]
+    },
+    {
+        "name": "Joao Victor Ferrari de Melo",
+        "location": "São Paulo",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["IA", "Machine Learning"]
+    },
+    {
+        "name": "Marcus Vinícius Sousa de Abreu",
+        "location": "Ceará",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["Machine Learning"]
+    },
+    {
+        "name": "Caíque Fernandes",
+        "location": "Cedro, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Trabalho em Equipe"]
+    },
+    {
+        "name": "Cicero Lucas Silva de Oliveira",
+        "location": "Juazeiro do Norte, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Machine Learning", "AWS"]
+    },
+    {
+        "name": "Renan Lucas de Moura",
+        "location": "Fortaleza, Ceará",
+        "course": "Engenharia de Computação",
+        "interests": ["AWS", "Machine Learning"]
+    },
+    {
+        "name": "Saulo Demonte",
+        "location": "Paulínia, São Paulo",
+        "course": "Redes de Computadores",
+        "interests": ["DevOps", "AWS"]
+    },
+    {
+        "name": "Jhonatan Sousa de Oliveira",
+        "location": "Crato, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Primeira Experiência Profissional"]
+    },
+    {
+        "name": "Rodrigo Cadeira Soares",
+        "location": "Iguatu, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Machine Learning", "Processamento de Linguagem Natural"]
+    },
+    {
+        "name": "Luiz Felipe Felix Silva",
+        "location": "Ceará",
+        "course": "Redes de Computadores",
+        "interests": ["Cibersegurança"]
+    },
+    {
+        "name": "Igor Melo",
+        "location": "Juazeiro, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Desenvolvimento Mobile", "IA"]
+    },
+    {
+        "name": "Jefferson Gomes Garcia",
+        "location": "Santo Antônio da Platina, Paraná",
+        "course": "Redes de Computadores",
+        "interests": ["AWS", "Segurança"]
+    },
+    {
+        "name": "Gustavo Gutierrez",
+        "location": "Mogi Mirim, São Paulo",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "interests": ["Python", "Estatística Aplicada"]
+    },
+    {
+        "name": "Marcelo de Araújo",
+        "location": "Fortaleza, Ceará",
+        "course": "Engenharia de Computação",
+        "interests": ["Machine Learning", "AWS"]
+    },
+    {
+        "name": "Dhemerson Souza Cunha",
+        "location": "Cruzeiros da Amazônia, Bahia",
+        "course": "Redes de Computadores",
+        "interests": ["Machine Learning", "Computação em Nuvem"]
+    },
+    {
+        "name": "Thiago",
+        "location": "São Paulo, Capital",
+        "course": "Sistemas para Internet",
+        "interests": ["Front-end"]
+    },
+    {
+        "name": "Fábio Veras",
+        "location": "São Paulo, Capital",
+        "course": "Redes de Computadores",
+        "interests": ["TI"]
+    },
+    {
+        "name": "Igor Phyllip Junqueira de Souza",
+        "location": "Barco Roxo, Rio de Janeiro",
+        "course": "Redes de Computadores",
+        "interests": ["Networking"]
+    },
+    {
+        "name": "Antonio Carvalho",
+        "location": "São Paulo",
+        "course": "Tecnologia de Rede",
+        "interests": ["Cibersegurança", "Cloud"]
+    },
+    {
+        "name": "Francinildo Alves",
+        "location": "Crato, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Programação"]
+    },
+    {
+        "name": "Kaique Bezerra",
+        "location": "Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Machine Learning"]
+    },
+    {
+        "name": "Daniel Barreto",
+        "location": "Recife",
+        "course": "Redes de Computadores",
+        "interests": ["Segurança", "Cloud Computing"]
+    },
+    {
+        "name": "Carlos Henrique Rodrigues Paixao",
+        "location": "Iguatu, Ceará",
+        "course": "Ciência da Computação",
+        "interests": ["Machine Learning"]
+    },
+    {
+        "name": "Gabriel Marques",
+        "location": "São Paulo",
+        "course": "Redes de Computadores",
+        "interests": ["Programação", "Python"]
+    },
+    {
+        "name": "DÉCIO",
+        "location": "São Paulo, Capital",
+        "course": "Sistemas para Internet",
+        "interests": ["Aprendizado"]
+    },
+    {
+        "name": "João Pedro",
+        "location": "Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Programação"]
+    },
+    {
+        "name": "Rubens Lima Ferreira",
+        "location": "Cedro, Ceará",
+        "course": "Sistemas de Informação",
+        "interests": ["Web"]
+    },
+    {
+        "name": "Ana Lucas",
+        "location": "Fortaleza, Ceará",
+        "course": "Engenharia de Computação",
+        "interests": ["AWS", "Machine Learning"]
+    },
+    {
+        "name": "Luiz Felipe Felix Silva",
+        "location": "Ceará",
+        "course": "Redes de Computadores",
+        "interests": ["Cibersegurança"]
+    }
+]

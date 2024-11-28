@@ -1,0 +1,111 @@
+service: api-tts
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: python3.9
+  environment:  # Adicionando variáveis de ambiente
+    TABLE_NAME: tts
+    STUDENTS_TABLE_NAME: students
+    BUCKET_NAME: bucket-tts-sls
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:Scan
+            - dynamodb:Query
+          Resource: 
+            - arn:aws:dynamodb:us-east-1:*:table/${self:provider.environment.TABLE_NAME}
+            - arn:aws:dynamodb:us-east-1:*:table/${self:provider.environment.TABLE_NAME}/received_phrase
+        - Effect: Allow
+          Action:
+            - polly:SynthesizeSpeech
+          Resource: "*"
+        - Effect: Allow
+          Action:
+            - s3:PutObject
+            - s3:GetObject
+            - s3:DeleteObject
+          Resource: arn:aws:s3:::${self:provider.environment.BUCKET_NAME}/*
+
+functions:
+  health:
+    handler: handler.health
+    events:
+      - httpApi:
+          path: /api/health
+          method: get
+
+  v1Description:
+    handler: handler.v1_description
+    events:
+      - httpApi:
+          path: /api/v1
+          method: get
+  getStudentInfo:
+    handler: handler.get_student_info
+    events:
+      - httpApi:
+          path: /api/v1/students
+          method: get
+          cors:  # Configurações específicas de CORS
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+  textToSpeech:
+    handler: handler.text_to_speech
+    events:
+      - http:
+          path: /api/v1/tts
+          method: post
+          cors:  # Configurações específicas de CORS
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+            allowCredentials: false  # Define se os cookies/sessões são permitidos
+
+
+resources:
+  Resources:
+    studentsTable:
+        Type: AWS::DynamoDB::Table
+        Properties:
+          TableName: ${self:provider.environment.STUDENTS_TABLE_NAME}
+          AttributeDefinitions:
+            - AttributeName: id
+              AttributeType: S
+          KeySchema:
+            - AttributeName: id
+              KeyType: HASH
+          BillingMode: PAY_PER_REQUEST
+    ttsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.TABLE_NAME}
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
+    S3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:provider.environment.BUCKET_NAME}
+plugins:
+  - serverless-scriptable-plugin
+
+custom:
+  scriptable:
+    hooks:
+      after:deploy:deploy: python3 seed.py
